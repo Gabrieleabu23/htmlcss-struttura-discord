@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Whitney', sans-serif;
 }
-header{
+#intestazione{
     /* debug */
     background-color: #add8e6;
     height: 50px;
@@ -15,7 +15,7 @@ header{
 }
 .container_nav{
     background-color: #daa520 ;
-    flex-basis: 60%;
+    flex-basis: 70%;
     /* height: 50px */
     align-items: center;
     /* justify-content: space-between; */
@@ -59,3 +59,45 @@ a{
     text-decoration: none;
     color: black;
 }
+#blu_square_header{
+    display: flex;
+    background-color: #00008b;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+#violet_square_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 21, 222);
+    /* justify-content: center; */
+    height: 200px;
+    width: 600px;
+}
+.square_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.square_pink_main{
+    background-color: #ffc0cb;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed black;
+
+}
+.square_blue_main{
+    border: 2px dashed black;
+    background-color: #1e90ff;
+    width: 500px;
+    height: 300px;
+
+}
+/* .gray{
+    background-color:#d3d3d3;
+}
+.square_main.gray > .square_pink_main{
+    order:-1
+} */
