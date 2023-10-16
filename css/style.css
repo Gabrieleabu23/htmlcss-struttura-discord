@@ -99,5 +99,5 @@ a{
     background-color:#d3d3d3;
 }
 .square_main.gray > .square_pink_main{
-    order:-1
+    order:-1;
 }
