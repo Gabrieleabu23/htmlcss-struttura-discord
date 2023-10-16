@@ -64,7 +64,7 @@ a{
     background-color: #00008b;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 400px;
 }
 #violet_square_header{
     display: flex;
@@ -72,14 +72,13 @@ a{
     justify-content: center;
     background-color: rgb(240, 21, 222);
     /* justify-content: center; */
-    height: 200px;
+    height: 300px;
     width: 600px;
 }
 .square_main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
 }
 .square_pink_main{
     background-color: #ffc0cb;
@@ -94,6 +93,18 @@ a{
     width: 500px;
     height: 300px;
 
+}
+.square_green_main{
+    border: 2px dashed black;
+    background-color: #228b22;
+    width: 800px;
+    height: 500px;
+
+}
+.square_green_main,
+.square_pink_main,
+.square_blue_main{
+    margin: 40px 0px;
 }
 .gray{
     background-color:#d3d3d3;
