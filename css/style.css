@@ -1,11 +1,45 @@
+/* REGOLE GENERICHE */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Whitney', sans-serif;
 }
+/* PARTE DI NAVIGAZIONE IN ALTO */
+nav{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* REGOLA LINEA DIVISORIA FOOTER */
+hr{
+    /* background-color: #c0c1c2; */
+    border: 1px solid #c0c1c2;
+}
+/* REGOLA PER I COLLEGAMENTI ESTERNI(ANCORE) */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* REGOLA DELLA LISTA NON ORDINATA */
+ul{
+    display: flex;
+    margin: 0px ;
+}
+li{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+/* FINE REGOLE GENERALI */
+
+/* INIZIO REGOLE CON CLASSE E ID */
+
+/* PARTE HEADER */
+
 #intestazione{
-    /* debug */
     background-color: #add8e6;
     height: 50px;
     display: flex;
@@ -16,19 +50,11 @@
 .container_nav{
     background-color: #daa520 ;
     flex-basis: 70%;
-    /* height: 50px */
     align-items: center;
-    /* justify-content: space-between; */
     display: flex;
     border: 2px dashed black;
 }
-nav{
-    width: 100%;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 #logo{
     padding-left: 10px;
     flex-basis: 25%;
@@ -40,14 +66,7 @@ nav{
     border-right: 2px dashed black;
     border-left: 2px dashed black;
 }
-ul{
-    display: flex;
-    margin: 0px ;
-}
-li{
-    list-style: none;
-    margin: 0px 10px;
-}
+
 #login{
     display: flex;
     justify-content: flex-end;
@@ -55,10 +74,7 @@ li{
     flex-basis: 25%;
     border-left: 2px dashed black;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
+
 #container_logo_header{
     display: flex;
     background-color: #00008b;
@@ -67,13 +83,16 @@ a{
     height: 400px;
 }
 
-
 #logo_header{
     width: 50%;
     height: 300px;
     background-color: #ee82ee;
     border: 2px dashed black;
 }
+
+/* FINE HEADER */
+
+/* INIZIO MAIN */
 .container_main_section_bg{
     display: flex;
     justify-content: center;
@@ -99,7 +118,7 @@ a{
     height: 300px;
 
 }
-.square_green_main{
+.big_box_main{
     border: 2px dashed black;
     background-color: #228b22;
     width: 100%;
@@ -111,6 +130,22 @@ a{
 .big_box_main{
     margin: 40px 0px;
 }
+
+/* INIZIO CLASSE BG GRIGIO */
+.gray{
+    background-color:#d3d3d3;
+}
+/* FINE CLASSE BG GRIGIO */
+
+
+/* SELETTORE AVANZATO PER SPOSTARE ORDINE DEL BOX TESTO NEL MAIN */
+.container_main_section_bg.gray > .container_main_section >.text_box{
+    order:-1;
+}
+
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
 .col_footer{
     padding-top: 10px;
     width: 100%;
@@ -120,10 +155,7 @@ a{
     align-items: center;
     padding-bottom: 20px;
 }
-hr{
-    /* background-color: #c0c1c2; */
-    border: 1px solid #c0c1c2;
-}
+
 
 #col_pink{
     background-color: #f08080;
@@ -158,9 +190,8 @@ hr{
     border: 2px dashed black;
     padding: 2px 5px;
 }
-.gray{
-    background-color:#d3d3d3;
-}
-.container_main_section_bg.gray > .container_main_section >.text_box{
-    order:-1;
-}
+
+/* FINE FOOTER */
+
+
+
